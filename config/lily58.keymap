@@ -10,12 +10,12 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 
-#define QWERTY 		0
+#define QWER 		0
 #define GAME		1
-#define MOUSE		2
-#define NUMBER		3
-#define NAVIGATION	4
-#define FUNCTION	5
+#define MOUS		2
+#define NUMB		3
+#define NAVI		4
+#define FUNC		5
 
 / {
 	keymap {
@@ -41,11 +41,11 @@
  *                   `---------------------------'            '------''--------------------'
  */
 			bindings = <
-&mt ESC PLUS &kp N1 &kp N2 &kp N3   &kp N4    &kp N5                                 &kp N6  &kp N7   &kp N8         &kp N9  &kp N0   &kp MINUS
-&kp TAB      &kp Q  &kp W  &kp E    &kp R     &kp T                                  &kp Y   &kp U    &kp I          &kp O   &kp P    &kp BSLH
-&kp LCTRL    &kp A  &kp S  &kp D    &kp F     &kp G                                  &kp H   &kp J    &kp K          &kp L   &kp SEMI &kp SQT
-&kp LGUI     &kp Z  &kp X  &kp C    &kp V     &kp B   &kp LBKT        &kp C_MUTE     &kp N   &kp M    &kp COMMA      &kp DOT &kp FSLH &kp RALT
-                           &kp LALT &kp GRAVE &kp RET &mt LSHFT SPACE &mt RSHFT BSPC &kp DEL &kp LBKT &mt RCTRL RBKT
+&mt ESC EQUAL &kp N1 &kp N2 &kp N3   &kp N4           &kp N5                                     &kp N6       &kp N7        &kp N8         &kp N9  &kp N0   &kp MINUS
+&kp TAB       &kp Q  &kp W  &kp E    &kp R            &kp T                                      &kp Y        &kp U         &kp I          &kp O   &kp P    &kp BSLH
+&kp LCTRL     &kp A  &kp S  &kp D    &kp F            &kp G                                      &kp H        &kp J         &kp K          &kp L   &kp SEMI &kp SQT
+&kp LGUI      &kp Z  &kp X  &kp C    &kp V            &kp B       &kp LBKT        &kp C_MUTE     &kp N        &kp M         &kp COMMA      &kp DOT &kp FSLH &kp RALT
+                            &kp LALT &lt NUMB GRAVE  &lt MOUS RET &mt LSHFT SPACE &mt RSHFT BSPC &lt NAVI DEL &lt FUNC LBKT &mt RCTRL RBKT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -74,8 +74,8 @@
 &kp ESC &trans &trans &trans    &trans    &trans                     &trans &trans &trans &trans &trans &trans 
 &trans  &trans &trans &trans    &trans    &trans                     &trans &trans &trans &trans &trans &trans 
 &trans  &trans &trans &trans    &trans    &trans                     &trans &trans &trans &trans &trans &kp RET
-&trans  &trans &trans &trans    &trans    &trans   &to QWERTY &trans &trans &trans &trans &trans &trans &trans
-                      &kp GRAVE &kp LSHFT &kp LALT &kp SPACE  &trans &trans &trans &trans 
+&trans  &trans &trans &trans    &trans    &trans   &to QWER  &trans &trans &trans &trans &trans &trans &trans
+                      &kp GRAVE &kp LSHFT &kp LALT &kp SPACE &trans &trans &trans &trans 
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
