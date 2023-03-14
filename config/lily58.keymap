@@ -141,35 +141,35 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
 
-// 		navigation_layer {
-// /* NAVIGATION
-//  * ,-----------------------------------------.                    ,-----------------------------------------.
-//  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
-//  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
-//  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-//  * |      |      |   &  |   *  |   (  |      |                    | Caps | PGDN |  Up  | PGUP |  Ins |      |
-//  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
-//  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-//  * |      |      |   $  |   %  |   ^  |      |-------.    ,-------| Home | Left | Down | Right|  End |      |
-//  * |      |      |      |      |      |      |       |    |       |      |      |      |      |      |      |
-//  * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
-//  * |      |  Esc |   !  |   @  |   #  |BackSP|-------|    |-------| Redo | Paste| Copy |  Cut | Undo |      |
-//  * |      |      |      |      |      |      |       |    |       |      |      |      |      |      |      |
-//  * `-----------------------------------------/      /      \      \-----------------------------------------'
-//  *                   |   )  |   `  | Enter| /      /        \      \  |      |   [  |      |
-//  *                   |      |      |      |/      /          \      \ |      |      |      |
-//  *                   `---------------------------'            '------''--------------------'
-//  */
-// 			bindings = <
-// &trans &trans  &trans   &trans    &trans    &trans                 &trans   &trans    &trans   &trans    &trans  &trans
-// &trans &trans  &kp AMPS &kp STAR  &kp LPAR  &trans                 &kp CAPS &kp PG_DN &kp UP   &kp PG_UP &kp INS &trans
-// &trans &trans  &kp DLLR &kp PRCNT &kp CARET &trans                 &kp HOME &kp LEFT  &kp DOWN &kp RIGHT &kp END &trans
-// &trans &kp ESC &kp EXCL &kp AT    &kp HASH  &kp BSPC &trans &trans &trans   &trans    &trans   &trans    &trans  &trans
-//                         &kp RPAR  &kp GRAVE &kp RET  &trans &trans &trans   &kp LBKT  &trans
-// 			>;
+		navigation_layer {
+/* NAVIGATION
+ * ,-----------------------------------------.                    ,-----------------------------------------.
+ * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
+ * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
+ * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
+ * |      |      |   &  |   *  |   (  |      |                    | Caps | PGDN |  Up  | PGUP |  Ins |      |
+ * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
+ * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
+ * |      |      |   $  |   %  |   ^  |      |-------.    ,-------| Home | Left | Down | Right|  End |      |
+ * |      |      |      |      |      |      |       |    |       |      |      |      |      |      |      |
+ * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
+ * |      |  Esc |   !  |   @  |   #  |BackSP|-------|    |-------| Redo | Paste| Copy |  Cut | Undo |      |
+ * |      |      |      |      |      |      |       |    |       |      |      |      |      |      |      |
+ * `-----------------------------------------/      /      \      \-----------------------------------------'
+ *                   |   )  |   `  | Enter| /      /        \      \  |      |   [  |      |
+ *                   |      |      |      |/      /          \      \ |      |      |      |
+ *                   `---------------------------'            '------''--------------------'
+ */
+			bindings = <
+&trans &trans  &trans   &trans    &trans    &trans                 &trans   &trans    &trans   &trans    &trans  &trans
+&trans &trans  &kp AMPS &kp STAR  &kp LPAR  &trans                 &kp CAPS &kp PG_DN &kp UP   &kp PG_UP &kp INS &trans
+&trans &trans  &kp DLLR &kp PRCNT &kp CARET &trans                 &kp HOME &kp LEFT  &kp DOWN &kp RIGHT &kp END &trans
+&trans &kp ESC &kp EXCL &kp AT    &kp HASH  &kp BSPC &trans &trans &trans   &trans    &trans   &trans    &trans  &trans
+                        &kp RPAR  &kp GRAVE &kp RET  &trans &trans &trans   &kp LBKT  &trans
+			>;
 
-// 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-// 		};
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+		};
 
 // 		function_layer {
 // /* FUNCTION
