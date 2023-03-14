@@ -51,35 +51,35 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
 
-// 		game_layer {
-// /* GAME
-//  * ,-----------------------------------------.                    ,-----------------------------------------.
-//  * |  ESC |      |      |      |      |      |                    |      |      |      |      |      |      |
-//  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
-//  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-//  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
-//  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
-//  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-//  * |      |      |      |      |      |      |-------.    ,-------|      |      |      |      |      | Enter|
-//  * |      |      |      |      |      |      |  TO0  |    |       |      |      |      |      |      |      |
-//  * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
-//  * |      |      |      |      |      |      |-------|    |-------|      |      |      |      |      |      |
-//  * |      |      |      |      |      |      |       |    |       |      |      |      |      |      |      |
-//  * `-----------------------------------------/      /      \      \-----------------------------------------'
-//  *                   |   `  | LSFT | LAlt | / Space/        \      \   |      |      |      |
-//  *                   |      |      |      |/      /          \      \  |      |      |      |
-//  *                   `---------------------------'            '-------''--------------------'
-//  */
-// 			bindings = <
-// &kp ESC &trans &trans &trans    &trans    &trans                     &trans &trans &trans &trans &trans &trans 
-// &trans  &trans &trans &trans    &trans    &trans                     &trans &trans &trans &trans &trans &trans 
-// &trans  &trans &trans &trans    &trans    &trans                     &trans &trans &trans &trans &trans &kp RET
-// &trans  &trans &trans &trans    &trans    &trans   &to QWERTY &trans &trans &trans &trans &trans &trans &trans
-//                       &kp GRAVE &kp LSHFT &kp LALT &kp SPACE  &trans &trans &trans &trans 
-// 			>;
+		game_layer {
+/* GAME
+ * ,-----------------------------------------.                    ,-----------------------------------------.
+ * |  ESC |      |      |      |      |      |                    |      |      |      |      |      |      |
+ * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
+ * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
+ * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
+ * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
+ * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
+ * |      |      |      |      |      |      |-------.    ,-------|      |      |      |      |      | Enter|
+ * |      |      |      |      |      |      |  TO0  |    |       |      |      |      |      |      |      |
+ * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
+ * |      |      |      |      |      |      |-------|    |-------|      |      |      |      |      |      |
+ * |      |      |      |      |      |      |       |    |       |      |      |      |      |      |      |
+ * `-----------------------------------------/      /      \      \-----------------------------------------'
+ *                   |   `  | LSFT | LAlt | / Space/        \      \   |      |      |      |
+ *                   |      |      |      |/      /          \      \  |      |      |      |
+ *                   `---------------------------'            '-------''--------------------'
+ */
+			bindings = <
+&kp ESC &trans &trans &trans    &trans    &trans                     &trans &trans &trans &trans &trans &trans 
+&trans  &trans &trans &trans    &trans    &trans                     &trans &trans &trans &trans &trans &trans 
+&trans  &trans &trans &trans    &trans    &trans                     &trans &trans &trans &trans &trans &kp RET
+&trans  &trans &trans &trans    &trans    &trans   &to QWERTY &trans &trans &trans &trans &trans &trans &trans
+                      &kp GRAVE &kp LSHFT &kp LALT &kp SPACE  &trans &trans &trans &trans 
+			>;
 
-// 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-// 		};
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+		};
 
 // 		mouse_layer {
 // /* MOUSE
