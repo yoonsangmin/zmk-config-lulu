@@ -171,34 +171,34 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
 
-// 		function_layer {
-// /* FUNCTION
-//  * ,-----------------------------------------.                    ,-----------------------------------------.
-//  * | Flash|      |      |EP_OFF| EP_ON|EP_TOG|                    |      |      |      |      |      |      |
-//  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
-//  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-//  * | Reset|      |      |      |      |      |                    | PSCR |  F7  |  F8  |  F9  |  F12 |      |
-//  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
-//  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-//  * |      |      |      | Vol- | Vol+ | Mute |-------.    ,-------| SCRL |  F4  |  F5  |  F5  |  F11 |      |
-//  * |      |      |      |      |      |      |       |    |       |      |      |      |      |      |      |
-//  * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
-//  * |      |      |      | Prev | Next | Play |-------|    |-------| PAUS |  F1  |  F2  |  F3  |  F10 |      |
-//  * |      |      |      |      |      |      |       |    |       |      |      |      |      |      |      |
-//  * `-----------------------------------------/      /      \      \-----------------------------------------'
-//  *                   |      |   `  | Enter| /      /        \      \  |  Del |      |      |
-//  *                   |      |      |      |/      /          \      \ |      |      |      |
-//  *                   `---------------------------'            '------''--------------------'
-//  */
-// 			bindings = <
-// &bootloader &trans &trans &ext_power EP_OFF &ext_power EP_ON &ext_power EP_TOG               &trans    		 &trans &trans &trans &trans  &trans
-// &reset      &trans &trans &trans            &trans           &trans                          &kp PSCRN 		 &kp F7 &kp F8 &kp F9 &kp F12 &trans
-// &trans      &trans &trans &kp C_VOL_DN      &kp C_VOL_UP     &kp C_MUTE                      &kp SLCK        &kp F4 &kp Fk &kp F5 &kp F11 &trans
-// &trans      &trans &trans &kp C_PREV        &kp C_FF         &kp C_PP          &trans &trans &kp PAUSE_BREAK &kp F1 &kp F2 &kp F3 &kp F10 &trans
-//                           &trans            &kp GRAVE        &kp RET           &trans &trans &kp DEL 		 &trans &trans
-// 			>;
+		function_layer {
+/* FUNCTION
+ * ,-----------------------------------------.                    ,-----------------------------------------.
+ * | Flash|      |      |EP_OFF| EP_ON|EP_TOG|                    |      |      |      |      |      |      |
+ * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
+ * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
+ * | Reset|      |      |      |      |      |                    | PSCR |  F7  |  F8  |  F9  |  F12 |      |
+ * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
+ * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
+ * |      |      |      | Vol- | Vol+ | Mute |-------.    ,-------| SCRL |  F4  |  F5  |  F5  |  F11 |      |
+ * |      |      |      |      |      |      |       |    |       |      |      |      |      |      |      |
+ * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
+ * |      |      |      | Prev | Next | Play |-------|    |-------| PAUS |  F1  |  F2  |  F3  |  F10 |      |
+ * |      |      |      |      |      |      |       |    |       |      |      |      |      |      |      |
+ * `-----------------------------------------/      /      \      \-----------------------------------------'
+ *                   |      |   `  | Enter| /      /        \      \  |  Del |      |      |
+ *                   |      |      |      |/      /          \      \ |      |      |      |
+ *                   `---------------------------'            '------''--------------------'
+ */
+			bindings = <
+&bootloader &trans &trans &ext_power EP_OFF &ext_power EP_ON &ext_power EP_TOG               &trans    		 &trans &trans &trans &trans  &trans
+&reset      &trans &trans &trans            &trans           &trans                          &kp PSCRN 		 &kp F7 &kp F8 &kp F9 &kp F12 &trans
+&trans      &trans &trans &kp C_VOL_DN      &kp C_VOL_UP     &kp C_MUTE                      &kp SLCK        &kp F4 &kp Fk &kp F5 &kp F11 &trans
+&trans      &trans &trans &kp C_PREV        &kp C_FF         &kp C_PP          &trans &trans &kp PAUSE_BREAK &kp F1 &kp F2 &kp F3 &kp F10 &trans
+                          &trans            &kp GRAVE        &kp RET           &trans &trans &kp DEL 		 &trans &trans
+			>;
 
-// 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-// 		};
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+		};
 	};
 };
